@@ -12,8 +12,8 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>Landmark Technologies</name>
+		<url>http://landmarktechnologies.com/</url>
 	</organization>
 
 	<properties>
@@ -97,20 +97,20 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <name>Landmark Technologies Releases Nexus Repository</name>
 	      <url>http://18.191.219.149:8088/landmarktech/repository/walmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <name>Landmark Technologies Snapshot Nexus Repository </name>
 	      <url>http://18.191.219.149:8088/landmarktech/repository/walmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
+		<finalName>Landmark</finalName>
 		
 		<plugins>
 			<plugin>
