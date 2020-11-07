@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>Landmark</finalName>
+		<finalName>maven-web-app</finalName>
 		
 		<plugins>
 			<plugin>
