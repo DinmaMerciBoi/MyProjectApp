@@ -94,17 +94,16 @@
 	</dependencies>
 	
 	<distributionManagement>
-	
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://35.174.19.3:8081/repository/amazon-release/</url>
+	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://35.174.19.3:8081/repository/amazon-snapshot/</url>
+	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
