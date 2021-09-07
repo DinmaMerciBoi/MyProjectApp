@@ -10,11 +10,11 @@
 </head>
 <body>
 <h1 align="center">Landmark Technologies</h1>
-<h2 align="center"> Welcome to Landmark Technologies. 
-	Landmark Technology is a an ideal online training  platform for DevOps and Cloud Engineers. 
+<h2 align="center"> Welcome to Landmark Technologies, 
+	An ideal online training  platform for DevOps and Cloud Engineers. 
 	We also offer interview preparations and job assitance.
 	Class26 will run from October 2, 2021.
-	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY</h2>
+	The shout of the King Jesus is in our midst. HE IS OUR SUCCESS ACCESS KEY</h2>
 <hr>
 <div style="text-align: center;">
 	<span>
