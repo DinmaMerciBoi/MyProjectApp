@@ -1,0 +1,189 @@
+Linux Commands 1 :
+=======================
+PayPal   = Client 
+========================
+Computers = 
+Operating system - OS
+   80% Linux OS
+   20% Windows OS
+       Solaris OS
+       Mac-OS 
+   ''
+  Ownership of data center
+  Rent computing services  
+
+We are leveraging computing serviceS from AWS and GCP
+
+ Linus - 1991 
+
+
+ Linux OS =
+
+   Is an Open source OS = Free + code 
+
+  WINDOWS --> Microsoft 
+  Solaris --> Sun System
+
+
+Linus was a student who converted a problem into a business
+   
+ Solaris wasn't an open source = paid for 
+
+ Create a free Account in AWS =  
+
+    https://aws.amazon.com/ 
+
+CONNECTING TO LINUX SERVER IN AWS: 
+      host: 
+        PublicIP  = 3.233.222.45
+           Access the server from external Networks
+        privateIP = 172.31.8.197
+           Access the server from internal Networks
+      VPN
+      authentication:
+         SSH-key =  class25demo.pem  = pem file
+         password = 
+      
+      users details:
+      userName = ec2-user  
+          = default user
+
+      ssh-client Software :
+      mobaXterm or puTTY 
+Networking: 
+  ssh ec2-user@3.233.222.45 = pasword 
+  ssh landmark@3.233.222.45
+  ssh -i class25demo.pem landmark@3.233.222.45
+ssh -i "class25demo.pem" ec2-user@ec2-3-233-222-45.compute-1.amazonaws.com
+
+Managing Files, Folders and sub Folders
+In Linux folders = Directories 
+File structure in Linux :
+                        /  
+                           = root (Main)
+                        c: drive for Windows
+      /sbin /etc /tmp /lib   /home  /bin  /opt 
+
+home  = users
+===========
+ - ec2-user
+ - simon 
+ - landmark  
+ - olu 
+ - ade
+
+bin = binary files or commands 
+=============================
+- cd    = change Directory
+- ls    = list files and Directory
+- cat   = displays the content of a file
+- pwd   = present working directory
+- whoami
+
+sbin = system bin
+=================
+- adduser simon
+- useradd landmark
+- passwd simon
+- init 0
+users with elevated priviledges
+What is the difference between bin and sbin in Linux? 
+ sbin are binary flies only executable by users 
+   with admin/elevated priviledges 
+ bin files are executable by any user 
+
+
+  CREATE FILES OR FOLDERS (Directory) 
+    key.pem 
+    test.txt 
+    deploy.yml 
+    hello.py 
+    monitor.sh 
+    ec2.tf
+    hello.java
+    pom.xml
+
+
+LINUX SERVER = default files and directories  
+
+etc = configuration files
+======================== 
+  - /etc/passwd 
+  - /etc/shadow 
+  - /etc/ssh/sshd_config 
+
+tmp - temporal file holder 
+=========================
+
+opt = Install Softwares and Packages
+===
+ - maven 
+ - tommcat 
+
+lib  = 
+====
+
+proc 
+=======
+-  meminfo 
+-  cpuinfo 
+
+========================
+      ls /bin 
+      ls /sbin 
+      ls /tmp 
+      ls /opt 
+      ls /var
+      ls /lib 
+      ls /etc 
+sudo is use to escalate or elevate priviledges
+Linux Basic Commands:
+=====================
+  mkdir  = create directory     
+  ls = list fil and directories 
+  mkdir class25
+  mkdir devops
+  mkdir -v test 
+        -v verbose
+        -p create both parent and child directories 
+textmate
+mkdir -pv Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+  mkdir  Devops/
+  mkdir  Devops/SDLC/
+  mkdir  Devops/SDLC/Linux/
+  mkdir  Devops/SDLC/Linux/Jenkins/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/Maven/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+ tree 
+ yum install tree
+
+Linux is case sensitive  = 
+   test / Test / TEST are different files in Linux
+
+  mkdir -p  devops/Linux/Jenkins/Git/Maven/Nexus/
+
+      mkdir -v test/ebay
+
+ = tree cannot be found 
+
+ = yum install tree  -- permission denied 
+
+ sudo yum install tree
+
+classes users:
+    Normal users 
+      sudo adduser ade
+      sudo su - ade 
+    Root / superuser / admin 
+    system users  
+
+rmdir it is use to delete empty directories
+
+mkdir use to create directories 
+
+rm -r use to delete directories 
+
+commands in Linux are in lower case 
