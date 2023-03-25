@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to the Winning Team Group, Landmark Technologies Project.</h1>
-<h2 align="center"> Just so you know, Group41 is the best group in Class 31 Engineers. We are supporting the Ebay Black Friday Project.
+<h2 align="center"> Just so you know, Winning Team Group is the best group in Class 31 Engineers. We are supporting the Ebay Black Friday Project.
 	And we love to build projects for Tesla Corporation.
 	To join our group, contact the Team Lead at a price!
 	Only pay $5,000 after a rigorous and grilling interview if you want to join the Winning Team!
