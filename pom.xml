@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://18.219.88.110:8081/repository/dinma-releases/</url>
+	      <url>http://3.145.131.233:8081/repository/tesla-app-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.219.88.110:8081/repository/dinma-snapshots/</url>
+	      <url>http://3.145.131.233:8081/repository/tesla-app-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
