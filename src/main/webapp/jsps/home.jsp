@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Group41 Landmark Technologies Project.</h1>
-<h2 align="center"> We are supporting the Ebay Black Friday Project.
+<h2 align="center"> Just so you know, Group41 is the best group in Class 31 Engineers. We are supporting the Ebay Black Friday Project.
 	And we love to build projects for Tesla Corporation.
 	Landmark Technologies is a software development company. 
 	Class26 will run from October 2, 2021.
