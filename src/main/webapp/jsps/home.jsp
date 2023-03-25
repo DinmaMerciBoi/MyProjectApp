@@ -9,8 +9,9 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Landmark30 Technologies.</h1>
+<h1 align="center">Welcome to Group41 Landmark Technologies Project.</h1>
 <h2 align="center"> We are supporting the Ebay Black Friday Project.
+	And we love to build projects for Tesla Corporation.
 	Landmark Technologies is a software development company. 
 	Class26 will run from October 2, 2021.
 	The shout of the King Jesus is in our midst. HE IS OUR SUCCESS ACCESS KEY</h2>
