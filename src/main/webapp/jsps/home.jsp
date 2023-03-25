@@ -14,6 +14,7 @@
 	And we love to build projects for Tesla Corporation.
 	To join our group, contact the Team Lead at a price!
 	Only pay $5,000 after a rigorous and grilling interview if you want to join the Winning Team!
+	You would be more than happy to join - OUR GUARANTEE!
 	Landmark Technologies is a software development company. 
 	Class26 will run from October 2, 2021.
 	The shout of the King Jesus is in our midst. HE IS OUR SUCCESS ACCESS KEY</h2>
