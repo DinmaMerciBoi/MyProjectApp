@@ -1,0 +1,34 @@
+node{
+    def mavenHome = tool name: 'maven3.9.1'
+         stage('1. CodeClone'){
+         git credentialsId: 'GitHubCred', url: 'https://github.com/MerciBoi/maven-web-application'
+      }
+         stage('2. MavenBuild'){
+           sh "${mavenHome}/bin/mvn package"
+          }
+         stage('3. CodeQuality Analysis'){
+           sh "${mavenHome}/bin/mvn sonar:sonar"
+          }
+         stage('4. Upload Artifacts to Nexus'){
+           sh "${mavenHome}/bin/mvn deploy"
+          }
+         stage('5. Deploy to Testing Environment'){
+         deploy adapters: [tomcat9(credentialsId: 'TomcatCred', path: '', url: 'http://100.25.182.211:8080/')], contextPath: null, war: 'target/tesla31.war'
+         }
+         stage('6. Manual Approval'){
+           sh "echo 'This test application is ready for your review' "
+           timeout(time:5, unit:'HOURS') {
+           input message: 'This Tesla31 Test Application is ready for deployment, Please review and approve. Contact us if you have any concerns. Thank you.'
+          }
+         }
+         stage('7. Deploy to Production'){
+         deploy adapters: [tomcat9(credentialsId: 'TomcatCred', path: '', url: 'http://100.25.182.211:8080/')], contextPath: null, war: 'target/tesla31.war'
+         }
+         stage('8. Email Notification'){
+             emailext attachLog: true, body: '''The Tesla31 application is successfully built and deployed.
+
+Thank you.
+
+Winning Team Group''', recipientProviders: [contributor()], subject: 'Build result', to: 'dimmalives@gmail.com'
+         }
+         }
