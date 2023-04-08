@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://18.224.22.220:8081/repository/tesla33-releases/</url>
+	      <url>http://3.20.225.245:8081/repository/tesla33-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.224.22.220:8081/repository/tesla33-snapshots/</url>
+	      <url>http://3.20.225.245:8081/repository/tesla33-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -153,7 +153,7 @@
            <repository> 
              <id>nexus</id>
              <name>Tesla33 nexus proxy repo</name>
-             <url>http://18.224.22.220:8081/repository/tesla33-proxy/</url>
+             <url>http://3.20.225.245:8081/repository/tesla33-proxy/</url>
            </repository>
        </repositories>
 	
