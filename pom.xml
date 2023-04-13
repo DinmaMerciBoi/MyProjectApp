@@ -109,7 +109,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla33</finalName>
+		<finalName>tesla</finalName>
 		
 		<plugins>
 			<plugin>
