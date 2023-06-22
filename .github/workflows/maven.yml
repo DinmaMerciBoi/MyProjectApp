@@ -45,17 +45,13 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
         
-    - name: Setup Minikube
-      uses: manusa/actions-setup-minikube@v2.7.2
-      with:
-        minikube version: 'v1.28.0'
-        kubernetes version: 'v1.25.4'
-        github token: ${{ secrets.MY_TOKEN }}
-    - name: Interact with the cluster
-      run: |
-        kubectl get nodes
+    - name: Update kube config
+      run: aws eks update-kubeconfig --name dinma-eks --region us-east-2
+
+    - name: Deploy to EKS
+      run: 
         kubectl apply -f minikube.yaml
-        minikube service list
-        minikube service example --url
-        echo "------------------opening the service------------------"
-        curl $(minikube service example --url)
+    - name: Interact with the cluster
+      run: 
+        kubectl get svc
+        
