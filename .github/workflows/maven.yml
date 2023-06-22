@@ -45,21 +45,19 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
         
-    - name: Start minikube
-      uses: medyagh/setup-minikube@master
-    - name: Try the cluster !
-      run: kubectl get pods -A
-    - name: Build image
-      run: |
-          export SHELL=/bin/bash
-          eval $(minikube -p minikube docker-env)
-          docker build -f ./Dockerfile -t chydinma/tesla:latest .
-          echo -n "verifying images:"
-          docker images         
-    - name: Deploy to minikube
+    - uses: hiberbee/github-action-kops@latest
+      with:
+        command: validate cluster
+        cluster-name: dima.k8s.local
+        state-store: s3://dinmakops
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+        AWS_REGION: us-east-2   
+    - name: Deploy to kops
       run:
         kubectl apply -f minikube.yaml
     - name: Test service URLs
-      run: |
-          minikube service list
-          minikube service appsvc --url
+      run: 
+        kubectl get svc
+          
