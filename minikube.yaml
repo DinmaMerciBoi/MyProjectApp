@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: chydinma/tesla:${{ event.run_id }}
+        image: chydinma/tesla:latest
         ports:
         - containerPort: 8080
 ---
