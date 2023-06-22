@@ -55,4 +55,7 @@ jobs:
       run: |
         kubectl get nodes
         kubectl apply -f minikube.yaml
-        kubectl get svc
+        minikube service list
+        minikube service example --url
+        echo "------------------opening the service------------------"
+        curl $(minikube service example --url)
