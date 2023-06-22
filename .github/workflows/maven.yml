@@ -49,5 +49,5 @@ jobs:
       with:
         manifests: |
             minikube.yaml
-        images: 'chydinma/tesla:${{ event.run_id }}'
+        images: 'chydinma/tesla'
         kubectl-version: 'latest'
