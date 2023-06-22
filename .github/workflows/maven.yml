@@ -45,16 +45,9 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
         
-    - name: Start minikube
-      uses: medyagh/setup-minikube@master
-    - name: Try the cluster !
-      run: kubectl get pods -A
-    - name: Deploy to minikube
-      run:
-        kubectl apply -f minikube.yaml
-    - name: Test service URLs
-      run: |
-        minikube service list
-        minikube service example --url
-        echo "------------------opening the service------------------"
-        curl $(minikube service example --url)
+    - uses: jtalk/k8s-deploy@v2
+      with:
+        manifests: |
+            minikube.yaml
+        images: 'chydinma/tesla:${{ event.run_id }}'
+        kubectl-version: 'latest'
