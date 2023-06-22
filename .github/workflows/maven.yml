@@ -56,8 +56,9 @@ jobs:
       run: aws eks update-kubeconfig --name dinma-eks --region us-east-2
 
     - name: Deploy to EKS
-      run: 
+      run: |
         kubectl apply -f minikube.yaml
+        kubectl apply -f ingress.yaml
     - name: Interact with the cluster
       run: 
         kubectl get svc
