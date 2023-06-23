@@ -1,16 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: tesla-ingress
-  namespace: default
+  name: myingress
 spec:
   rules:
-  - http:
+  - host: merciboi.link
+    http:
       paths:
-      - path: /tesla
-        pathType: Prefix
+      - pathType: Prefix
+        path: /tesla
         backend:
           service:
             name: appsvc
             port:
-              number: 8080
+              number: 80
