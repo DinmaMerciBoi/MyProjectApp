@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: chydinma/tesla:latest
+        image: chydinma/tesla3:latest
         ports:
         - containerPort: 8080
 ---
@@ -32,4 +32,4 @@ spec:
   ports:
   - targetPort: 8080
     port: 80
-  type: NodePort
+  type: LoadBalancer
