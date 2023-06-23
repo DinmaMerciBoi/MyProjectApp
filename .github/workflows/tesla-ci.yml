@@ -43,5 +43,13 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Amazon ECR push
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: tesla3
+        registry: 533082097799.dkr.ecr.us-east-2.amazonaws.com
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
 
   
