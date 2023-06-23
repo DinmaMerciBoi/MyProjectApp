@@ -36,16 +36,12 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-    - name: Nexus Repo Publish
-      uses: sonatype-nexus-community/nexus-repo-github-action@master
+    - name: Docker build and push
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        serverUrl: http://18.117.141.192:8081/repository/tesla-releases/
-        username: ${{ secrets.NEXUS_USERNAME }}
-        password: ${{ secrets.NEXUS_PASSWORD }}
-        format: maven2
-        repository: tesla-releases
-        coordinates: directory=nexus artifactId=app version=1.0.0
-        assets: extension=war
-        filename: ./target/tesla.war
+        image: chydinma/tesla3
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
   
