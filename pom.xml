@@ -12,8 +12,8 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Landmark Technologies</name>
-		<url>http://landmarktechnologies.com/</url>
+		<name>Merciboi Systems Solutions</name>
+		<url>https://www.merciboi.com/</url>
 	</organization>
 
 	<properties>
@@ -109,7 +109,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla</finalName>
+		<finalName>myprojectapp</finalName>
 		
 		<plugins>
 			<plugin>
@@ -152,7 +152,7 @@
 <repositories> 
            <repository> 
              <id>nexus</id>
-             <name>Tesla nexus proxy repo</name>
+             <name>Project nexus proxy repo</name>
              <url>http://54.174.130.127:8081/repository/tesla-proxy/</url>
            </repository>
        </repositories>
