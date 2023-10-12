@@ -207,6 +207,12 @@ ansible-playbook kube_deploy.yml --check
 ansible-playbook kube_deploy.yml
 ```
 
+* On the EKS Server, create manifest files for the deployment
+```bash
+vi myapp-deployment.yml
+vi myapp-service.yml
+```
+
 ## 18. Create a CD Job on Jenkins
 
 ## 19. Intergrate the CI and the CD Jobs on Jenkins
